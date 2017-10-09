@@ -1,3 +1,4 @@
+import { IBook } from './custom-types';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
@@ -9,8 +10,13 @@ export class BooksService {
   constructor(private http: HttpClient) { }
 
 
+  getBook(isbn) {
+    const url = this.restRoot;
+    return this.http.get<IBook>(`${url}/${isbn}`);
+  }
+
   getBooks() {
     const url = this.restRoot;
-    return this.http.get(url);
+    return this.http.get<IBook[]>(url);
   }
 }

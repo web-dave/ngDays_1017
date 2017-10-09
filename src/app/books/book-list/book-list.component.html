@@ -4,6 +4,7 @@
     [book]="book" 
     (bookselected)="selectBook($event)"></app-book-preview>
 </ul>
+<div [hidden]="!books" >bla</div>
 <ng-template #noBooks>
   NO BOOKS :(
 </ng-template>
