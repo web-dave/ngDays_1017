@@ -1,4 +1,4 @@
-import { BooksModule } from './books/books.module';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -15,7 +15,6 @@ import { AboutModule } from './about/about.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BooksModule,
     AboutModule
   ],
   providers: [],

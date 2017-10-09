@@ -1,4 +1,3 @@
-import { BooksComponent } from './books/books/books.component';
 import { AboutComponent } from './about/about/about.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -6,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: 'books',
-    component: BooksComponent
+    loadChildren: './books/books.module#BooksModule'
   },
   {
     path: 'about',
