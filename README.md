@@ -1,5 +1,7 @@
 # NgDays
 
+This is the repo of my Angular starter workshop om Angular Days in October 2017
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
 
 ## Development server
