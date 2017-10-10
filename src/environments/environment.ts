@@ -7,4 +7,4 @@ export const environment = {
   production: false
 };
 
-export const color = 'red';
+export const restroot = 'http://localhost:4730/books/';
