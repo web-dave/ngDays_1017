@@ -18,4 +18,12 @@ export class BooksService {
   getBooks() {
     return this.http.get<IBook[]>(this.restRoot);
   }
+
+  updateBook(book: IBook) {
+    return this.http.put<IBook>(`${this.restRoot}${book.isbn}`, book);
+  }
+
+  createBook(book: IBook) {
+    return this.http.post<IBook>(this.restRoot, book);
+  }
 }
