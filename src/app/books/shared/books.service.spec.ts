@@ -95,6 +95,8 @@ describe('BooksService', () => {
           backend.expectOne('http://localhost:4730/books/1234').flush(booksStub[0], { status: 200, statusText: 'Ok' });
       }));
     
+// OK this methods are not present yet :(
+
     // it('should update a book', inject([BooksService, HttpTestingController],
     //   (service: BooksService, backend: HttpTestingController) => {
     //     service.updateBook(booksStub[0])
